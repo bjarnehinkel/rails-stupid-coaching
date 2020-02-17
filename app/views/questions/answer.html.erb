@@ -1,2 +1,13 @@
-<h1>Questions#answer</h1>
-<p>Find me in app/views/questions/answer.html.erb</p>
+<div class="container">
+  <h1>Answer</h1>
+  <div class="message your-message my-4">
+    <h3 class="ml-2"><%= params[:question] %></h3>
+    <p class="ml-2">- You</p>
+  </div>
+  <div class="message answer-message mb-4">
+    <h3><%= @answer %></h3>
+    <p>- Your Coach</p>
+  </div>
+  <%= link_to 'Ask Another Question', ask_path %>
+</div>
+
